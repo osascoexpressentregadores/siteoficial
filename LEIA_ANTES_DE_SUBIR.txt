@@ -1,0 +1,20 @@
+OSASCO EXPRESS — PACOTE CORRIGIDO
+
+O problema visto no navegador era CSS/JS não carregando. Por segurança, esta versão deixa o CSS e o JS também embutidos em cada página. Assim, mesmo se a pasta assets não carregar por cache, caminho ou upload incompleto, o site abre estilizado e os botões funcionam.
+
+COMO SUBIR NO GITHUB PAGES:
+1. Extraia o ZIP.
+2. Abra a pasta extraída.
+3. Suba o CONTEÚDO de dentro dela direto na raiz do repositório.
+4. A raiz precisa mostrar index.html, CNAME, sitemap.xml, robots.txt, assets/ e as pastas quem-somos/, servicos/, entregadores/, faq/, fale-conosco/.
+5. Não suba a pasta inteira como subpasta.
+
+TESTES APÓS SUBIR:
+- https://osascoexpress.com.br/
+- https://osascoexpress.com.br/assets/css/style.css
+- https://osascoexpress.com.br/servicos/
+- https://osascoexpress.com.br/entregadores/
+- https://osascoexpress.com.br/fale-conosco/
+- https://osascoexpress.com.br/sitemap.xml
+
+Se o site abrir sem estilo novamente, é porque o index.html novo não substituiu o antigo ou foi enviado para a pasta errada.
