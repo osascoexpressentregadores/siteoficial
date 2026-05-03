@@ -1,2 +1,2 @@
-Validação automática do pacote:
-Nenhum link interno quebrado encontrado.
+Revisão final: páginas principais, formulários, WhatsApp, sitemap, robots, política de privacidade e links internos conferidos.
+Links internos quebrados: 0

@@ -1,12 +1,1 @@
-OSASCO EXPRESS — PACOTE PRONTO PARA GITHUB PAGES
-
-1. Extraia este ZIP.
-2. Abra a pasta extraída.
-3. Envie TODOS os arquivos e TODAS as pastas para a raiz do repositório.
-4. Não envie apenas o index.html. As pastas quem-somos, servicos, entregadores, faq, fale-conosco e assets precisam aparecer no GitHub.
-5. Depois teste:
-https://osascoexpress.com.br/
-https://osascoexpress.com.br/servicos/
-https://osascoexpress.com.br/entregadores/
-https://osascoexpress.com.br/fale-conosco/
-https://osascoexpress.com.br/sitemap.xml
+Suba todos os arquivos e pastas desta pasta diretamente na raiz do repositório GitHub Pages. As pastas assets, quem-somos, servicos, entregadores, faq e fale-conosco precisam aparecer na raiz.
