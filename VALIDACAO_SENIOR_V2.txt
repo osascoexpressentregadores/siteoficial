@@ -1,0 +1,32 @@
+VALIDAÇÃO SÊNIOR V2 — OSASCO EXPRESS
+
+Aplicações concluídas:
+- CSS consolidado em assets/css/style.css; removidos blocos <style> inline das páginas.
+- JavaScript preservado inline nas páginas; removido carregamento duplicado de /assets/js/main.js para evitar redeclaração de const e listeners duplicados.
+- Alert nativo removido; formulários agora exibem erro inline e mensagem de sucesso.
+- Formulário de cliente recebeu campo opcional de Cidade/Bairro e payload atualizado para bairro_cidade.
+- Inputs com autocomplete: nome, telefone, bairro/cidade.
+- Labels sr-only adicionadas aos campos para acessibilidade.
+- H1s e titles das páginas principais atualizados para SEO.
+- Ícones SVG contextualizados em cards de problemas, segmentos, serviços, steps e links.
+- Cards de problema receberam frase emocional.
+- Seção de cobertura adicionada na home: Osasco, Barueri, Carapicuíba, Jandira, Cotia, Itapevi e São Paulo — Zona Oeste.
+- Página Quem Somos expandida com origem e compromisso.
+- Página Serviços recebeu schema Service detalhado por segmento.
+- Seção de valor reposicionada antes do formulário de Serviços.
+- Steps receberam classe para linha conectora visual no CSS.
+- Página 404 reescrita com CTA e links úteis.
+- wa-float ajustado para bottom:104px no mobile.
+- Sitemap com prioridade de /fale-conosco/ ajustada para 0.95.
+- Política de Privacidade sem H2 duplicado.
+- Mapa com endereço Avenida Diogo Antônio Feijó, 855 - KM 18 - Osasco/SP.
+
+Validações automáticas:
+- 0 links internos quebrados.
+- 0 blocos <style> inline restantes.
+- 0 chamadas alert() restantes.
+- 1 H1 por página.
+- JSON-LD parseado sem erro.
+
+Como subir:
+Extraia o ZIP e envie todos os arquivos e pastas de dentro dele para a raiz do GitHub Pages.
