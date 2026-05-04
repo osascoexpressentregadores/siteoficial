@@ -1,0 +1,15 @@
+PATCH — Aba Entregadores com imagens corrigidas
+
+Suba apenas estas pastas/arquivos na raiz do GitHub:
+
+entregadores/index.html
+assets/img/entregador-parceiro-passo-1-ficha-cadastral-osasco-express.png
+assets/img/entregador-parceiro-passo-2-baixar-app-osasco-express.png
+assets/img/entregador-parceiro-passo-3-suporte-confirmar-horarios-osasco-express.png
+
+Não precisa subir o site inteiro.
+Ao fazer upload no GitHub, mantenha a mesma estrutura de pastas.
+Depois teste:
+https://osascoexpress.com.br/entregadores/
+
+Se o navegador mostrar as imagens antigas, use Ctrl + Shift + R ou abra em aba anônima.
