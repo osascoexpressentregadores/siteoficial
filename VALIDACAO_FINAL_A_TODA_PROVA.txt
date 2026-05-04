@@ -1,0 +1,40 @@
+VALIDACAO FINAL A TODA PROVA - OSASCO EXPRESS
+
+Status: pacote revisado para publicacao na raiz do GitHub Pages.
+
+Itens verificados:
+- Dominio canonico oficial: https://osascoexpress.com.br/
+- CNAME: osascoexpress.com.br
+- robots.txt liberado e apontando para o sitemap correto
+- sitemap.xml limpo, somente com paginas indexaveis principais
+- Paginas principais com index,follow
+- Politica de Privacidade e 404 com noindex,follow
+- Google Analytics preservado
+- Formularios preservados com Google Sheets e WhatsApp
+- WhatsApp flutuante preservado
+- Elfsight preservado na Home
+- Links internos validados sem quebra
+- Menu principal preservado
+- Area dos entregadores com imagens corrigidas e links oficiais
+- Home lapidada sem redundancia excessiva
+- Quem Somos lapidado com prova, territorio, equipe e metodo
+- Redacao revisada sem travessoes tipograficos nos textos publicos
+
+Paginas indexaveis no sitemap:
+https://osascoexpress.com.br/
+https://osascoexpress.com.br/servicos/
+https://osascoexpress.com.br/fale-conosco/
+https://osascoexpress.com.br/quem-somos/
+https://osascoexpress.com.br/entregadores/
+https://osascoexpress.com.br/faq/
+
+Observacao operacional:
+Depois de subir, testar no navegador:
+https://osascoexpress.com.br/sitemap.xml
+https://osascoexpress.com.br/robots.txt
+https://osascoexpress.com.br/
+https://osascoexpress.com.br/servicos/
+https://osascoexpress.com.br/entregadores/
+https://osascoexpress.com.br/fale-conosco/
+
+No Search Console, reenviar sitemap.xml e solicitar indexacao das seis paginas principais.
