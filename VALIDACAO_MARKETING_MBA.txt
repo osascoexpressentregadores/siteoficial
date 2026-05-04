@@ -1,0 +1,15 @@
+OSASCO EXPRESS — Revisão Marketing MBA aplicada
+
+Ajustes principais:
+- Home reforçada com promessa de resultado e seção “Por que entrega improvisada sai caro?”
+- Serviços reorganizados por tipo de cliente e proposta de valor por segmento
+- Entregadores transformada em portal rápido de ação
+- FAQ ampliado com objeções comerciais e dúvidas de canal
+- Fale conosco com triagem: Quero contratar / Sou entregador / Endereço e mapa
+- CSS complementar aplicado sem quebrar JS, Sheets, WhatsApp, GA4, Elfsight ou sitemap
+
+Validação local:
+- Estrutura multipágina preservada
+- Formulários preservados
+- Links externos preservados
+- Conteúdo interno sensível não exposto
