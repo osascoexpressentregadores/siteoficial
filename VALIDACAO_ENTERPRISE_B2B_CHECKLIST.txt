@@ -1,0 +1,12 @@
+Rodada Enterprise B2B aplicada
+
+Checklist atendido:
+1. Clareza imediata: adicionada seção de proposta de valor em 5 segundos na Home.
+2. Confiança e autoridade: adicionada área para logos autorizados, cases, LGPD e processo de compra. Não foram inventadas marcas.
+3. Conversão: CTAs reforçados, alternativas de fundo/meio de funil, calculadora e material técnico.
+4. Formulários: adicionados e-mail corporativo e tamanho do time/operação nos formulários comerciais.
+5. Conteúdo técnico: criadas páginas de cases, como comprar, calculadora de impacto e guia de última milha.
+6. Tecnologia/CRM: microcopy e payload preparados para CRM com campos empresariais e rastreamento.
+7. Mobile/performance: componentes adicionados com CSS responsivo e sem mídia pesada.
+
+Observação: logos de clientes e cases com métricas só devem ser publicados após autorização e validação de dados.

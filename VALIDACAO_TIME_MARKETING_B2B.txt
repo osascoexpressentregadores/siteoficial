@@ -1,0 +1,37 @@
+VALIDAÇÃO DA RODADA MARKETING B2B - OSASCO EXPRESS
+
+Equipe aplicada:
+- Gestor de Tráfego Pago / Media Buyer
+- Analista de Inbound Marketing
+- Especialista em ABM
+- Product Marketing Manager
+- CRO, UX/UI, Copy, SEO, Analytics e LGPD em apoio
+
+Melhorias aplicadas:
+1. Criadas landing pages para campanhas:
+   - /lp/transportadoras-osasco/
+   - /lp/motoboy-osasco/
+   - /lp/delivery-restaurantes-osasco/
+2. Criada página de inbound/diagnóstico:
+   - /materiais/diagnostico-operacional/
+3. Criada página ABM noindex para contas estratégicas:
+   - /abm/operadores-logisticos-zona-oeste/
+4. Página Serviços recebeu bloco explicando jornada de campanha, inbound e ABM.
+5. Home recebeu bloco de campanha B2B.
+6. Formulário comercial passou a aceitar empresa e cargo.
+7. JavaScript passou a enviar empresa/cargo/email quando existirem.
+8. Rastreamento adicional criado para cliques em materiais, LPs e ABM.
+9. Sitemap atualizado com páginas indexáveis de campanha e material.
+10. ABM ficou noindex,follow para uso comercial personalizado sem disputar SEO principal.
+11. Redirects adicionados para caminhos de campanha.
+
+Cuidados preservados:
+- GA4 G-G0C9GMJRYX mantido.
+- WhatsApp comercial 5511986661784 mantido.
+- Suporte 5511924782555 mantido.
+- Sitemap, robots, CNAME e redirects preservados.
+- Política de privacidade e microcopy LGPD preservadas.
+- Páginas continuam estáticas e aptas para GitHub Pages/FTP.
+
+Observação:
+A estratégia segue boas práticas de tráfego pago, inbound e ABM. Google Ads depende de relevância entre palavra-chave, anúncio e landing page. LinkedIn Ads permite segmentar públicos B2B por cargo, empresa, setor e outros atributos profissionais. O uso de AI/SEO moderno exige conteúdo útil e claro para pessoas, não apenas para ranquear.

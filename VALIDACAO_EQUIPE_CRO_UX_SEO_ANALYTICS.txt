@@ -1,0 +1,24 @@
+VALIDAÇÃO DA RODADA EQUIPE CRO + UX/UI + COPY + FRONT-END + SEO + ANALYTICS + LGPD
+
+Aplicações realizadas:
+- Barra de assistência de conversão nas páginas comerciais prioritárias.
+- Barra mobile fixa com WhatsApp e Serviços, substituindo excesso de dependência do botão flutuante.
+- Linha de confiança com +500 mil entregas, +8 anos, suporte e agenda digital.
+- CTAs com data-cro-variant para análise futura e testes A/B.
+- Campos de formulário com autocomplete/inputmode.
+- Microcopy de privacidade/LGPD em formulários.
+- Rastreamento de form_start e cta_click no main.js.
+- Preservação do whatsapp_click existente.
+- CSS com foco em mobile-first, acessibilidade, hover states, reduced motion e conversão.
+
+Preservado:
+- GA4 G-G0C9GMJRYX.
+- Comercial 5511986661784.
+- Suporte 5511924782555.
+- Sitemap, robots, CNAME e redirects.
+
+Recomendação pós-publicação:
+- Medir whatsapp_click por página e por intenção.
+- Medir form_start vs form_submit.
+- Testar CTAs de hero vs barra CRO.
+- Ajustar títulos e seções conforme dados reais de Search Console e GA4.

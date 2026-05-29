@@ -1,0 +1,12 @@
+RODADA COPYWRITER SÊNIOR - OSASCO EXPRESS
+
+Ajustes aplicados:
+- Heros reescritos para falar com dor real e intenção comercial.
+- CTAs mais específicos por público.
+- Textos genéricos substituídos por linguagem de operação, capacidade, cobertura e previsibilidade.
+- SEO local preservado nos títulos principais.
+- WhatsApp comercial e suporte preservados.
+- GA4, sitemap, robots, CNAME e redirects não foram removidos.
+
+Critério usado:
+O site deve parecer humano, comercial e operacional, não promessa genérica de motoboy.

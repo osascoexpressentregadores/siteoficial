@@ -1,0 +1,24 @@
+# Mapa de páginas
+
+- /
+- /servicos/
+- /para-transportadoras/
+- /servicos/delivery-para-restaurantes/
+- /servicos/marketplace-ultima-milha/
+- /servicos/farmacias-clinicas/
+- /servicos/motoboy-para-empresas-em-osasco/
+- /servicos/coleta-e-entrega-local/
+- /quem-somos/
+- /entregadores/
+- /faq/
+- /fale-conosco/
+- /regioes/motoboy-em-osasco/
+- /regioes/motoboy-em-barueri/
+- /regioes/motoboy-em-carapicuiba/
+- /regioes/motoboy-em-jandira/
+- /regioes/motoboy-em-pinheiros/
+- /conteudos/como-reforcar-entregadores-para-transportadora/
+- /conteudos/ultima-milha-em-osasco-e-regiao/
+- /conteudos/delivery-restaurante-sem-improviso/
+- /conteudos/entrega-para-farmacia-cuidados/
+- /conteudos/como-contratar-motoboy-para-empresa/
