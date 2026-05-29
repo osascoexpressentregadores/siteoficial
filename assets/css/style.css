@@ -729,3 +729,77 @@ section .lead-form[data-client-form] .privacy-microcopy {
 
 /* Blog enxuto: guias completos em uma única página */
 .blog-full-guides{padding:56px 0;background:#fff}.blog-guide-compact{scroll-margin-top:90px;border-top:1px solid rgba(15,23,42,.12);padding:34px 0}.blog-guide-compact h3{font-size:clamp(1.35rem,2.3vw,2rem);line-height:1.2;margin:.4rem 0 .65rem}.blog-guide-compact .lead{color:#475569;font-size:1.05rem}.blog-guide-compact h2{font-size:1.35rem;margin-top:1.5rem}.blog-guide-compact ul,.blog-guide-compact ol{padding-left:1.3rem}.blog-guide-compact a{font-weight:700}.blog-guide-compact table{width:100%;border-collapse:collapse;margin:1rem 0}.blog-guide-compact th,.blog-guide-compact td{border:1px solid rgba(15,23,42,.14);padding:.65rem;text-align:left}@media(max-width:720px){.blog-full-guides{padding:38px 0}.blog-guide-compact{padding:28px 0}}
+
+
+/* FASE FINAL MENU CORRIGIDO - navegação enxuta e sem estouro no desktop */
+.header .nav{overflow:visible;}
+.header .brand{flex:0 0 auto;max-width:240px;}
+.header .menu{flex:1 1 auto;min-width:0;justify-content:flex-end;flex-wrap:nowrap;overflow:visible;}
+.header .menu>a,.header .nav-dropdown>summary{white-space:nowrap;}
+@media (min-width:981px) and (max-width:1280px){
+  .header .brand small{display:none;}
+  .header .menu{gap:3px;}
+  .header .menu>a,.header .nav-dropdown>summary{font-size:12px;padding:9px 7px;}
+  .header .menu .cta{padding:10px 11px;}
+  .brand-mark{width:34px;height:34px;border-radius:11px;}
+}
+@media (min-width:981px) and (max-width:1120px){
+  .header .menu>a[href="/clientes-e-segmentos-atendidos/"],
+  .header .menu>a[href="/regioes/"]{display:none;}
+}
+@media (max-width:980px){
+  .header .menu{flex:initial;}
+}
+
+
+/* Release final: trava de menu responsivo sem estouro horizontal */
+.header{overflow:visible}
+.header .nav{display:flex;align-items:center;gap:16px;width:100%;min-width:0}
+.header .brand{flex:0 0 auto;max-width:230px;min-width:0}
+.header .brand span:last-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.header .menu{flex:1 1 auto;min-width:0;display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:nowrap;overflow:visible}
+.header .menu>a{font-size:13px;line-height:1;white-space:nowrap;padding:9px 9px;border-radius:999px}
+.header .menu .cta{padding:11px 13px;background:var(--red)!important;color:#fff!important;box-shadow:0 10px 24px rgba(234,29,44,.18)}
+@media (max-width:1180px) and (min-width:981px){
+  .header .brand small{display:none}
+  .header .brand{max-width:185px}
+  .header .menu{gap:3px}
+  .header .menu>a{font-size:12px;padding:8px 7px}
+  .header .menu .cta{padding:10px 10px}
+}
+@media (max-width:1060px) and (min-width:981px){
+  .header .menu>a[href="/clientes-e-segmentos-atendidos/"],
+  .header .menu>a[href="/regioes/"]{display:none}
+}
+@media (max-width:980px){
+  .header .mobile-toggle{display:inline-flex!important}
+  .header .menu{display:none;position:fixed;left:14px;right:14px;top:76px;background:#fff;border:1px solid #eaecf0;border-radius:22px;padding:12px;box-shadow:0 24px 70px rgba(16,24,40,.18);z-index:400;align-items:stretch;gap:6px;max-height:calc(100vh - 92px);overflow:auto;flex-direction:column;justify-content:flex-start}
+  .header .menu.open,.header .menu.is-open{display:grid!important}
+  .header .menu>a{display:flex;align-items:center;justify-content:space-between;width:100%;font-size:15px;padding:14px 15px;border-radius:15px}
+  .header .menu .cta{justify-content:center;text-align:center;margin-top:4px}
+}
+
+
+/* RELEASE FINAL NAV - menu enxuto, âncoras na Home e sem estouro */
+.header .menu{display:flex;align-items:center;justify-content:flex-end;gap:4px;flex-wrap:nowrap;min-width:0;}
+.header .menu>a{font-size:13px;padding:9px 8px;white-space:nowrap;}
+.header .menu>a[href="/fale-conosco/#prova-social-contato"]{max-width:132px;overflow:hidden;text-overflow:ellipsis;}
+.header .menu .cta{padding:11px 13px;}
+@media(max-width:1160px){
+  .header .brand{max-width:190px;}
+  .header .brand small{display:none;}
+  .header .menu{gap:2px;}
+  .header .menu>a{font-size:12px;padding:8px 6px;}
+  .header .menu .cta{padding:10px 10px;}
+}
+@media(max-width:1040px){
+  .header .menu>a[href="/blog/"],
+  .header .menu>a[href="/fale-conosco/#prova-social-contato"]{display:none;}
+}
+@media(max-width:980px){
+  .header .menu{display:none;position:fixed;left:14px;right:14px;top:76px;background:#fff;border:1px solid #eaecf0;border-radius:22px;padding:12px;box-shadow:0 24px 70px rgba(16,24,40,.18);z-index:400;align-items:stretch;gap:6px;max-height:calc(100vh - 92px);overflow:auto;}
+  .header .menu.open,.header .menu.is-open{display:grid!important;}
+  .header .menu>a{display:flex!important;width:100%;justify-content:space-between;font-size:15px;padding:14px 15px;border-radius:15px;max-width:none;}
+  .header .menu .cta{justify-content:center;text-align:center;margin-top:4px;}
+}
+html{scroll-padding-top:92px;}
