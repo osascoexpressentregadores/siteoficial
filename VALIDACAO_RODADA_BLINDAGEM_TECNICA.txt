@@ -1,0 +1,30 @@
+RODADA DE BLINDAGEM TÉCNICA APLICADA
+
+Objetivo: reduzir risco real do funil estático de leads sem alterar a direção visual do site.
+
+Correções aplicadas:
+1. Formulários agora têm honeypot anti-bot e checkbox obrigatório de consentimento de contato.
+2. WhatsApp não recebe mais payload completo com e-mail, cargo, volume, urgência e detalhes operacionais extensos; passa a receber resumo mínimo.
+3. Payload completo continua indo para o webhook/planilha, com lead_id, idempotency_key, timestamp, sessão e first touch.
+4. Adicionado timeout com AbortController, retry com exponential backoff e jitter, e fila local de contingência limitada.
+5. Adicionado rate limit básico client-side por tipo de formulário para reduzir reenvio acidental/abuso simples.
+6. Removido envio de navigator.userAgent; payload agora usa contexto mínimo de dispositivo: viewport, idioma e tipo mobile/desktop.
+7. Centralização de rastreamento com trace_id/session_id e eventos operacionais.
+8. Redução de catch silencioso: erros críticos passam por reportClientError e evento client_error no GA4 quando disponível.
+9. Calculadora de ROI deixou de usar innerHTML no resultado e agora renderiza com textContent/DOM seguro.
+10. Criados fallback visual caso WhatsApp não abra.
+11. Adicionados _headers e .htaccess com headers de segurança para hosts que suportarem.
+12. Main script marcado com defer onde aplicável.
+
+Limites conhecidos:
+- Em site 100% estático, não é possível esconder totalmente o endpoint do Apps Script.
+- Proteção real contra abuso exige camada server-side/proxy/serverless com validação, rate limit e autenticação.
+- GitHub Pages não aplica .htaccess nem _headers. Para headers reais, usar Cloudflare, Netlify ou hospedagem Apache/Nginx configurável.
+- Google Sheets continua sendo destino frágil para volume alto; recomendação futura é endpoint serverless + fila + CRM.
+
+Validação esperada:
+- Conferir formulário comercial e entregador no navegador.
+- Conferir se checkbox de consentimento aparece e impede envio sem autorização.
+- Conferir se WhatsApp abre com resumo reduzido.
+- Conferir se payload ainda chega à planilha.
+- Conferir GA4 para form_start, form_submit, whatsapp_click e client_error.

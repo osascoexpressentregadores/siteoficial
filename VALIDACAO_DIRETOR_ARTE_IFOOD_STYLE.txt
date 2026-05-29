@@ -1,0 +1,11 @@
+Rodada emergencial aplicada: Diretor de Arte + UX Product Senior + Front-end.
+
+Correções principais:
+- Visual escuro substituído por base clara estilo iFood: branco, vermelho e cinza leve.
+- Menu redesenhado com Serviços em dropdown e navegação mais curta.
+- Heros e CTAs redesenhados para clareza e leitura.
+- Títulos gigantes/espremidos corrigidos por CSS global e troca de textos críticos da Home.
+- Seções com aparência pesada foram suavizadas com cards claros, bordas leves e menos contraste agressivo.
+- Responsivo reforçado para celular.
+- Telefones preservados: comercial 5511986661784, suporte 5511924782555.
+- GA4, sitemap, robots, CNAME e redirects preservados.
