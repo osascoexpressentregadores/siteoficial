@@ -1,0 +1,14 @@
+VALIDACAO RODADA 12 - CRM/SDR + ATENDIMENTO COMERCIAL
+
+Arquivos HTML verificados: 52
+Erros de H1: []
+Telefone comercial antigo encontrado: []
+Comercial preservado: 5511986661784
+Suporte preservado: 5511924782555
+
+Melhorias aplicadas:
+- Campos de urgência, melhor horário e canal preferido nos formulários comerciais.
+- Página pública /como-funciona-o-atendimento-comercial/ explicando triagem, diagnóstico e proposta.
+- Blocos de SDR na Home, Fale Conosco e Diagnóstico Operacional.
+- Payload e mensagem de WhatsApp agora carregam urgência, melhor horário e canal preferido.
+- Sitemap e redirects atualizados.

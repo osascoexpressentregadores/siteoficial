@@ -1,0 +1,25 @@
+RODADA 8 — ESPECIALISTA EM MARCA + REVISOR DE PORTUGUÊS/CLAREZA
+
+Objetivo:
+- Reforçar percepção de marca profissional.
+- Tirar frases com cara de IA ou bastidor interno.
+- Deixar promessa mais clara, responsável e comercial.
+- Sustentar o posicionamento: entrega é o centro; tecnologia, atendimento e processo sustentam a operação.
+
+Ajustes aplicados:
+- Home: H1, lead, CTAs e blocos de confiança revisados.
+- Home: nova seção de padrão de marca e compromisso de comunicação.
+- Para Transportadoras: linguagem reforçada para risco de contrato, SLA, reputação e volume.
+- Serviços: texto ajustado para escolher por gargalo real.
+- Fale Conosco: copy mais clara e comercial.
+- Quem Somos: texto mais institucional e menos genérico.
+- CSS: bloco visual novo .brand-standards responsivo.
+
+Critérios da rodada:
+- Não parecer site feito por IA.
+- Não prometer liderança absoluta sem prova.
+- Não vender aplicativo como fim; vender operação organizada.
+- Manter foco principal em entregas.
+- Preservar WhatsApp, GA4, sitemap, robots, CNAME e redirects.
+
+Status: aplicado para próxima rodada.

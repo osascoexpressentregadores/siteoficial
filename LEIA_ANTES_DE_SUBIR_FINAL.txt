@@ -1,0 +1,12 @@
+SITE OSASCO EXPRESS - ENTREGA FINAL APÓS TODAS AS RODADAS
+
+1. Subir na raiz do GitHub/FTP o conteúdo da pasta siteoficial-main.
+2. Conferir index.html, CNAME, sitemap.xml, robots.txt, _redirects e assets/.
+3. Comercial oficial: 5511986661784.
+4. Suporte oficial: 5511924782555.
+5. GA4 preservado: G-G0C9GMJRYX.
+6. Página nova de segurança: /seguranca-lgpd/.
+7. Não publicar logos, cases ou métricas de clientes sem autorização real.
+8. Antes de publicar, testar Home, Serviços, Para Transportadoras, Fale Conosco, Entregadores e formulário no celular.
+9. Após publicar, abrir Search Console e solicitar indexação das páginas estratégicas.
+10. Manter backup da versão anterior para rollback.

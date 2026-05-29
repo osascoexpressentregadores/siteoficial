@@ -1,0 +1,27 @@
+RODADAS 4 A 7 APLICADAS
+
+Rodada 4: Especialista em Google Ads + CRO
+- Páginas de campanha reforçadas por intenção.
+- Seção de caminhos de conversão adicionada na Home.
+- CTAs de urgência, calculadora e processo de contratação reforçados.
+
+Rodada 5: UX/UI Designer + Copywriter
+- Blocos de resumo executivo, prova rápida e cuidado operacional adicionados.
+- Textos reforçados para decisão B2B sem promessa genérica.
+
+Rodada 6: Analista de Dados/Web Analytics + Front-end/Performance
+- Evento form_start corrigido.
+- Evento form_submit adicionado aos formulários.
+- Rastreamento de links externos preparado.
+- Preconnect para WhatsApp adicionado.
+
+Rodada 7: LGPD/Segurança + Cliente Cético/Marca
+- Bloco de prova para céticos adicionado na Home.
+- Aviso responsável de dimensionamento adicionado em transportadoras.
+- Política de cases/logos com autorização e dados reais adicionada.
+
+Todos os ajustes preservam:
+- GA4 G-G0C9GMJRYX
+- WhatsApp comercial 5511986661784
+- Suporte 5511924782555
+- Sitemap, robots, CNAME e redirects

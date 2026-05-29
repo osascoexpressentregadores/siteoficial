@@ -1,0 +1,14 @@
+RODADA 3 — SEO EXPERT SÊNIOR
+
+Aplicações realizadas:
+- Titles e meta descriptions reescritos para páginas prioritárias por intenção de busca.
+- Corrigido breadcrumb JSON-LD da Home, removendo referência indevida a /index.html/.
+- Menu "Regiões" ajustado para apontar para /regioes/.
+- Criada página hub /regioes/ para fortalecer SEO territorial.
+- Adicionados clusters de linkagem interna para regiões e serviços estratégicos.
+- Sitemap atualizado com /regioes/.
+- Redirects adicionados para variações de /regioes.
+- Mantidos GA4, WhatsApp comercial, suporte, sitemap, robots, CNAME e redirects.
+
+Critério da rodada:
+O Google precisa entender melhor: quem é a Osasco Express, onde atende, quais serviços oferece, quais páginas são prioritárias e qual intenção cada página responde.

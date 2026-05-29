@@ -1,0 +1,23 @@
+VALIDAÇÃO RODADA 10 - GOOGLE BUSINESS PROFILE + SEO LOCAL POR REGIÕES
+
+Especialistas desta rodada:
+1. Especialista em Google Business Profile
+2. Especialista em SEO Local por Cidades e Bairros
+
+Ajustes aplicados:
+- Home recebeu bloco de sinais locais para busca: serviço claro, região definida e prova operacional.
+- Página /regioes/ recebeu bloco de alinhamento entre site, Google Business Profile, fotos, posts, serviços e links.
+- Páginas regionais receberam bloco específico explicando intenção local, áreas de referência, foco comercial e regra de viabilidade.
+- FAQ recebeu perguntas sobre regiões atendidas e motivo das páginas locais.
+- CSS responsivo adicionado para os novos blocos.
+- Schema LocalBusiness/Organization recebeu areaServed em páginas principais quando possível.
+
+Regras preservadas:
+- Não inventar unidade física em cidades onde não há base confirmada.
+- Não prometer cobertura automática sem análise operacional.
+- Não criar páginas repetidas apenas trocando nome de cidade.
+- Comercial permanece 5511986661784.
+- Suporte permanece 5511924782555.
+
+Próxima rodada sugerida:
+Especialista em Conteúdo de Autoridade + Especialista em Inbound/Lead Magnet.

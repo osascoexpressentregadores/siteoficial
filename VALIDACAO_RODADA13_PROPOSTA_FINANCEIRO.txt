@@ -1,0 +1,16 @@
+VALIDACAO_RODADA13_PROPOSTA_FINANCEIRO
+
+Especialistas: Especialista em Proposta Comercial + Especialista Financeiro.
+
+Aplicado:
+- Criada página /planos-operacionais/ para explicar modelo comercial sem expor preço de forma rasa.
+- Home ganhou bloco sobre proposta dimensionada e custo de operação mal planejada.
+- Como Comprar ganhou ponte entre diagnóstico, modelo comercial e valor.
+- Para Transportadoras ganhou bloco financeiro específico para alto volume, rota, SLA e reserva.
+- Serviços ganhou caminhos para modelos operacionais, contratação e calculadora de impacto.
+- Fale Conosco ganhou bloco para preparar lead antes da proposta.
+- Sitemap e redirects atualizados.
+- CSS responsivo adicionado para blocos financeiros/comerciais.
+
+Critério da rodada:
+Não vender tudo como corrida avulsa. Separar apoio pontual, plano recorrente, base dedicada e projeto enterprise. Evitar promessa de preço sem dimensionamento.

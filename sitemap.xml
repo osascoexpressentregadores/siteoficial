@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://osascoexpress.com.br/</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://osascoexpress.com.br/regioes/</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>0.85</priority></url>
   <url><loc>https://osascoexpress.com.br/conteudos/como-contratar-motoboy-para-empresa/</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://osascoexpress.com.br/conteudos/como-reforcar-entregadores-para-transportadora/</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://osascoexpress.com.br/conteudos/delivery-restaurante-sem-improviso/</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
@@ -32,4 +33,16 @@
 <url><loc>https://osascoexpress.com.br/como-comprar/</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
 <url><loc>https://osascoexpress.com.br/ferramentas/calculadora-roi/</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
 <url><loc>https://osascoexpress.com.br/materiais/guia-ultima-milha-zona-oeste/</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+<url><loc>https://osascoexpress.com.br/materiais/</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
+<url><loc>https://osascoexpress.com.br/materiais/checklist-operacao-entregas/</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
+<url><loc>https://osascoexpress.com.br/materiais/roteiro-briefing-logistico/</loc><lastmod>2026-05-29</lastmod><changefreq>monthly</changefreq><priority>0.72</priority></url>
+
+  <url>
+    <loc>https://osascoexpress.com.br/como-funciona-o-atendimento-comercial/</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url><loc>https://osascoexpress.com.br/planos-operacionais/</loc><lastmod>2026-05-29</lastmod><changefreq>weekly</changefreq><priority>0.82</priority></url>
+<url><loc>https://osascoexpress.com.br/seguranca-lgpd/</loc><lastmod>2026-05-29</lastmod><priority>0.60</priority></url>
 </urlset>

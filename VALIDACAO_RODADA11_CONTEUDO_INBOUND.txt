@@ -1,0 +1,15 @@
+VALIDAÇÃO RODADA 11 — CONTEÚDO DE AUTORIDADE + INBOUND/LEAD MAGNET
+
+Aplicado:
+- Criada central /materiais/.
+- Criada página /materiais/checklist-operacao-entregas/.
+- Criada página /materiais/roteiro-briefing-logistico/.
+- Home recebeu bloco de conteúdo para lead frio/morno.
+- Serviços recebeu bloco de caminho alternativo antes da proposta.
+- Sitemap e redirects atualizados.
+- Estratégia: conteúdo não é enfeite; é pré-qualificação comercial.
+
+Critério da rodada:
+- Lead que ainda não quer falar com vendas recebe material útil.
+- Lead quente continua com WhatsApp direto.
+- Time comercial recebe conversa mais qualificada.

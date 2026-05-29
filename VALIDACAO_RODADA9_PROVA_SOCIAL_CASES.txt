@@ -1,0 +1,21 @@
+Rodada 9 — Especialista em Prova Social + Especialista em Cases B2B
+
+Objetivo: aumentar confiança sem inventar clientes, logos ou métricas.
+
+Aplicado:
+- Home recebeu bloco de prova social responsável.
+- Página Cases recebeu modelo de estudo de caso com antes, ação, métrica e autorização.
+- Página Para Transportadoras recebeu bloco de evidência para decisores B2B.
+- CSS responsivo criado para novos blocos.
+
+Critério editorial:
+- Não inventar cliente.
+- Não inventar logo.
+- Não inventar métrica.
+- Usar +500 mil entregas e +8 anos como prova própria declarada.
+- Cases só com autorização e dados reais.
+
+Validação técnica:
+- Telefones preservados.
+- CTAs com data attributes preservados/adicionados.
+- Layout mobile previsto.

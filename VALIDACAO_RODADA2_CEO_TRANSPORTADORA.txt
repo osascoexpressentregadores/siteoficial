@@ -1,0 +1,20 @@
+VALIDAÇÃO RODADA 2 — CEO DE TRANSPORTADORA
+
+Objetivo: fortalecer a página /para-transportadoras/ para alto ticket, volume, SLA, rota descoberta e confiança B2B.
+
+Alterações aplicadas:
+- Hero reescrito para falar de rota parada e falta de gente na rua.
+- Subtítulo reforçado para contrato, volume, prazo, pico e última milha.
+- CTA principal alterado para “Quero reforçar minhas rotas”.
+- Nova seção “O problema não é conseguir pedido. É sustentar a entrega até o fim.”
+- Nova seção “Quando chamar” com cenários reais de transportadoras.
+- Nova seção “Custo do improviso” conectando rota parada, prejuízo e calculadora de impacto.
+- CSS responsivo adicionado para os novos blocos.
+
+Critérios da bancada:
+- Fala com o dono/gestor de transportadora.
+- Evita promessa vazia de quantidade fixa.
+- Mostra diagnóstico antes de promessa operacional.
+- Preserva WhatsApp comercial, GA4, SEO, sitemap e estrutura.
+
+Status: aprovado para seguir à Rodada 3 — SEO Expert Sênior.
