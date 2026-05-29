@@ -10,7 +10,7 @@ function $all(s,root=document){return [...root.querySelectorAll(s)]}
 function safeText(value){return String(value||'').replace(/[<>]/g,'').trim()}
 function normalizePhone(value){return String(value||'').replace(/\D/g,'')}
 function isLikelyPhone(value){const phone=normalizePhone(value);return phone.length>=10&&phone.length<=13}
-function toggleMenu(){const m=$('#menu');const b=document.querySelector('[data-menu-toggle]'); if(m){const open=m.classList.toggle('open'); if(b){b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Fechar menu principal':'Abrir menu principal')}}}
+function toggleMenu(){const m=$('#menu');const b=document.querySelector('[data-menu-toggle]');if(m){const open=!m.classList.contains('open')&&!m.classList.contains('is-open');m.classList.toggle('open',open);m.classList.toggle('is-open',open);if(b){b.setAttribute('aria-expanded',open?'true':'false');b.setAttribute('aria-label',open?'Fechar menu principal':'Abrir menu principal')}}}
 function wa(phone,msg){return `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`}
 function getUtm(){const p=new URLSearchParams(location.search);return{utm_source:p.get('utm_source')||'',utm_medium:p.get('utm_medium')||'',utm_campaign:p.get('utm_campaign')||'',utm_term:p.get('utm_term')||'',utm_content:p.get('utm_content')||''}}
 function getFirstTouch(){try{return JSON.parse(localStorage.getItem('oe_first_touch')||'{}')}catch(e){return {}}}
@@ -48,7 +48,85 @@ ClickRouter.register('a[href^="http"]',(event,a)=>{try{const u=new URL(a.href);i
 function setupRoiCalculator(){const form=document.querySelector('[data-roi-calculator]');if(!form)return;const out=document.querySelector('[data-roi-result]');form.addEventListener('submit',function(e){e.preventDefault();const entregas=Number(form.entregas_dia.value||0);const falha=Number(form.percentual_falha.value||0)/100;const valor=Number(form.valor_medio.value||0);const dias=Number(form.dias_mes.value||26);const entregasRisco=Math.round(entregas*falha*dias);const impacto=entregasRisco*valor;if(out)renderRoiResult(out,entregasRisco,impacto);trackEvent('roi_calculator_submit',{page_path:location.pathname,page_title:document.title,entregas_dia:entregas,percentual_falha:falha*100,valor_medio:valor,dias_mes:dias,impacto_estimado:impacto})})}
 function renderRoiResult(out,entregasRisco,impacto){out.replaceChildren();const strong=document.createElement('strong');strong.textContent=`${entregasRisco.toLocaleString('pt-BR')} entregas/mês em risco`;const span=document.createElement('span');span.textContent=`Impacto estimado: R$ ${impacto.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2})}`;const p=document.createElement('p');p.textContent='Esse cálculo é apenas uma estimativa inicial. Para operação real, a Osasco Express avalia região, janela de entrega, produtividade e cobertura necessária.';out.append(strong,span,p)}
 function setupFormsMetadata(){document.querySelectorAll('form[data-client-form],form[data-rider-form]').forEach(form=>{if(!form.querySelector('[name="website"]')){const hp=document.createElement('label');hp.className='hp-field';hp.setAttribute('aria-hidden','true');hp.innerHTML='Não preencha este campo<input type="text" name="website" tabindex="-1" autocomplete="off">';form.prepend(hp)}if(!form.querySelector('[name="consentimento"]')){const btn=form.querySelector('button[type="submit"]');const label=document.createElement('label');label.className='consent-line';label.innerHTML='<input type="checkbox" name="consentimento" required> Autorizo a Osasco Express a usar meus dados para retorno sobre esta solicitação.';if(btn)btn.insertAdjacentElement('beforebegin',label);else form.appendChild(label)}})}
-document.addEventListener('DOMContentLoaded',()=>{try{const firstTouchKey='oe_first_touch';if(!localStorage.getItem(firstTouchKey))localStorage.setItem(firstTouchKey,JSON.stringify({url:location.href,referrer:document.referrer||'',time:new Date().toISOString(),utm:getUtm()}))}catch(e){}setupFormsMetadata();$all('[data-menu-toggle]').forEach(b=>b.addEventListener('click',toggleMenu));$all('.faq-q').forEach(b=>b.addEventListener('click',()=>b.closest('.faq-item').classList.toggle('open')));$all('form[data-client-form]').forEach(f=>f.addEventListener('submit',handleClientForm));$all('form[data-rider-form]').forEach(f=>f.addEventListener('submit',handleRiderForm));setupRevealAnimations();setupRoiCalculator();ClickRouter.init();const path=location.pathname.replace(/\/$/,'')||'/';$all('.menu a,.footer a').forEach(a=>{try{const ap=new URL(a.href).pathname.replace(/\/$/,'')||'/';if(ap===path)a.classList.add('active')}catch(e){}})});
+
+
+/* FASE 4 - Performance, mensuração e SEO operacional */
+function setupScrollDepthTracking(){
+  const marks=[25,50,75,90];
+  const sent=new Set();
+  let ticking=false;
+  function check(){
+    ticking=false;
+    const doc=document.documentElement;
+    const max=Math.max(1,doc.scrollHeight-window.innerHeight);
+    const pct=Math.min(100,Math.round((window.scrollY/max)*100));
+    marks.forEach(mark=>{
+      if(pct>=mark&&!sent.has(mark)){
+        sent.add(mark);
+        trackEvent('scroll_depth',{event_category:'engagement',scroll_percent:mark,page_path:location.pathname,page_title:document.title,intent:document.body.dataset.intent||''});
+      }
+    });
+  }
+  window.addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(check)}},{passive:true});
+  check();
+}
+function setupWebVitalsLite(){
+  try{
+    const nav=performance.getEntriesByType&&performance.getEntriesByType('navigation')[0];
+    if(nav){
+      setTimeout(()=>trackEvent('page_performance',{event_category:'performance',page_path:location.pathname,page_title:document.title,dom_content_loaded:Math.round(nav.domContentLoadedEventEnd),load_time:Math.round(nav.loadEventEnd),transfer_size:Math.round(nav.transferSize||0)}),0);
+    }
+    let cls=0;
+    if('PerformanceObserver' in window){
+      try{
+        new PerformanceObserver((list)=>{for(const entry of list.getEntries()){if(!entry.hadRecentInput)cls+=entry.value||0}}).observe({type:'layout-shift',buffered:true});
+        window.addEventListener('pagehide',()=>trackEvent('web_vitals_lite',{event_category:'performance',metric_name:'CLS',metric_value:Number(cls.toFixed(4)),page_path:location.pathname}),{once:true});
+      }catch(e){}
+      try{
+        new PerformanceObserver((list)=>{const entries=list.getEntries();const last=entries[entries.length-1];if(last)trackEvent('web_vitals_lite',{event_category:'performance',metric_name:'LCP',metric_value:Math.round(last.startTime),page_path:location.pathname})}).observe({type:'largest-contentful-paint',buffered:true});
+      }catch(e){}
+    }
+  }catch(error){reportClientError(error,{module:'setupWebVitalsLite'})}
+}
+function persistUtmsInForms(){
+  try{
+    const utm=getUtm();
+    const hasUtm=Object.values(utm).some(Boolean);
+    if(hasUtm)localStorage.setItem('oe_last_utm',JSON.stringify({...utm,time:new Date().toISOString(),landing:location.pathname}));
+    const stored=JSON.parse(localStorage.getItem('oe_last_utm')||'{}');
+    document.querySelectorAll('form').forEach(form=>{
+      ['utm_source','utm_medium','utm_campaign','utm_term','utm_content'].forEach(name=>{
+        if(!form.querySelector(`[name="${name}"]`)){
+          const input=document.createElement('input');input.type='hidden';input.name=name;input.value=utm[name]||stored[name]||'';form.appendChild(input);
+        }
+      });
+    });
+  }catch(error){reportClientError(error,{module:'persistUtmsInForms'})}
+}
+function setupHighIntentClicks(){
+  ClickRouter.register('a[href*="play.google.com"]',(event,a)=>trackEvent('app_download_click',{event_category:'conversion',page_path:location.pathname,page_title:document.title,destination:a.href,button_text:(a.textContent||'').trim()}));
+  ClickRouter.register('a[href*="docs.google.com"]',(event,a)=>trackEvent('rider_signup_sheet_click',{event_category:'conversion',page_path:location.pathname,page_title:document.title,destination:a.href,button_text:(a.textContent||'').trim()}));
+}
+
+document.addEventListener('DOMContentLoaded',()=>{try{const firstTouchKey='oe_first_touch';if(!localStorage.getItem(firstTouchKey))localStorage.setItem(firstTouchKey,JSON.stringify({url:location.href,referrer:document.referrer||'',time:new Date().toISOString(),utm:getUtm()}))}catch(e){}setupFormsMetadata();$all('[data-menu-toggle]').forEach(b=>b.addEventListener('click',toggleMenu));$all('.faq-q').forEach(b=>b.addEventListener('click',()=>b.closest('.faq-item').classList.toggle('open')));$all('form[data-client-form]').forEach(f=>f.addEventListener('submit',handleClientForm));$all('form[data-rider-form]').forEach(f=>f.addEventListener('submit',handleRiderForm));setupRevealAnimations();setupRoiCalculator();persistUtmsInForms();setupHighIntentClicks();ClickRouter.init();setupScrollDepthTracking();setupWebVitalsLite();const path=location.pathname.replace(/\/$/,'')||'/';$all('.menu a,.footer a').forEach(a=>{try{const ap=new URL(a.href).pathname.replace(/\/$/,'')||'/';if(ap===path)a.classList.add('active')}catch(e){}})});
 document.addEventListener('focusin',function(e){const form=e.target.closest&&e.target.closest('form[data-form-observed]');if(!form||form.dataset.started)return;form.dataset.started='true';trackEvent('form_start',{page_path:location.pathname,page_title:document.title,form_type:(form.dataset.form||(form.hasAttribute('data-client-form')?'cliente':'geral'))})});
-document.addEventListener('keydown',function(e){if(e.key==='Escape'){const m=document.querySelector('#menu');const b=document.querySelector('[data-menu-toggle]');if(m&&m.classList.contains('open')){m.classList.remove('open');if(b){b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Abrir menu principal')}}}});
-document.addEventListener('click',function(e){const m=document.querySelector('#menu');const b=document.querySelector('[data-menu-toggle]');if(m&&b&&m.classList.contains('open')&&!e.target.closest('#menu')&&!e.target.closest('[data-menu-toggle]')){m.classList.remove('open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Abrir menu principal')}document.querySelectorAll('.nav-dropdown[open]').forEach(function(drop){if(!drop.contains(e.target))drop.removeAttribute('open')})});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){const m=document.querySelector('#menu');const b=document.querySelector('[data-menu-toggle]');if(m&&m.classList.contains('open')){m.classList.remove('open');m.classList.remove('is-open');if(b){b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Abrir menu principal')}}}});
+document.addEventListener('click',function(e){const m=document.querySelector('#menu');const b=document.querySelector('[data-menu-toggle]');if(m&&b&&m.classList.contains('open')&&!e.target.closest('#menu')&&!e.target.closest('[data-menu-toggle]')){m.classList.remove('open');m.classList.remove('is-open');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Abrir menu principal')}document.querySelectorAll('.nav-dropdown[open]').forEach(function(drop){if(!drop.contains(e.target))drop.removeAttribute('open')})});
+
+
+/* FASE 7 - UX mobile QA: menu, viewport e sinais leves */
+function setupPhase7MobileUX(){
+  try{
+    const menu=document.querySelector('#menu');
+    const toggle=document.querySelector('[data-menu-toggle]');
+    if(menu&&toggle){
+      toggle.addEventListener('click',()=>trackEvent('phase7_mobile_menu_state',{event_category:'ux',page_path:location.pathname,is_open:menu.classList.contains('open')||menu.classList.contains('is-open')}));
+    }
+    document.querySelectorAll('a,button,input,select,textarea,summary').forEach(el=>{
+      if(!el.getAttribute('aria-label') && (el.textContent||'').trim().length===0 && el.tagName.toLowerCase()==='a'){
+        el.setAttribute('aria-label','Ação do site Osasco Express');
+      }
+    });
+  }catch(error){reportClientError(error,{module:'setupPhase7MobileUX'})}
+}
+document.addEventListener('DOMContentLoaded',setupPhase7MobileUX);
