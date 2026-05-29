@@ -1,0 +1,60 @@
+REESCRITA EDITORIAL FINAL - OSASCO EXPRESS
+
+Páginas reescritas integralmente:
+- Home
+- Serviços
+- Para Transportadoras
+- Delivery para Restaurantes
+- Motoboy para Empresas
+- Marketplace e Última Milha
+- Farmácias e Clínicas
+- Coleta e Entrega Local
+- Quem Somos
+- Fale Conosco
+- FAQ
+- Entregadores
+- Cases
+- Materiais
+- Regiões e páginas regionais
+- Conteúdos de autoridade principais
+
+Frases removidas ou reescritas:
+- “O que o Google e o cliente precisam entender...”
+- “prova social responsável”
+- “porta de entrada”
+- “clareza em 5 segundos”
+- “jornada de marketing”
+- “lead frio / lead morno”
+- “ativo comercial”
+- “não inventamos métricas”
+- “não precisa saber o modelo certo agora”
+
+Nova direção de voz:
+- Cliente em primeiro lugar.
+- Cenas reais de entrega, pico, rota, atraso e fechamento.
+- Menos bastidor técnico.
+- Mais dor reconhecível e ação comercial.
+- SEO mantido sem texto robótico.
+
+Notas estimadas após reescrita:
+- Home: 8,8
+- Serviços: 8,6
+- Para Transportadoras: 9,0
+- Delivery: 8,7
+- Motoboy para Empresas: 8,6
+- Marketplace e Última Milha: 8,5
+- Farmácias e Clínicas: 8,6
+- Quem Somos: 8,7
+- Fale Conosco: 8,6
+- Páginas regionais: 8,5
+- Conteúdos de autoridade: 8,5
+
+Preservado:
+- WhatsApp comercial 5511986661784
+- Suporte 5511924782555
+- GA4
+- sitemap.xml
+- robots.txt
+- CNAME
+- _redirects
+- estrutura principal do site
