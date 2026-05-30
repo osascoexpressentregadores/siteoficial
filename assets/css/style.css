@@ -1078,3 +1078,8 @@ html{scroll-padding-top:92px;}
 .phase3-final-depth{display:none!important}
 @media(max-width:900px){.footer-grid-final{grid-template-columns:1fr 1fr}.site-footer-final{padding-bottom:92px}.footer-bottom-final{display:grid}.footer-grid-final p{max-width:none}}
 @media(max-width:560px){.footer-grid-final{grid-template-columns:1fr}.footer-grid-final a{font-size:15px}.footer-bottom-final{font-size:12px}.site-footer-final{padding-top:38px}}
+
+/* Release fix: CTA branco em fundo vermelho precisa manter texto vermelho visível */
+.app-feature .btn-primary{background:#fff!important;color:#e7192f!important}
+.app-feature .btn-primary:hover{background:#fff!important;color:#c91525!important}
+.app-feature .btn-outline{color:#fff!important;border-color:rgba(255,255,255,.75)!important}
