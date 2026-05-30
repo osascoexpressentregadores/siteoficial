@@ -1,21 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /*.md$
-Disallow: /*.csv$
-Disallow: /_backup/
-Disallow: /_documentacao-interna/
 
 Sitemap: https://osascoexpress.com.br/sitemap.xml
-
-# AI/reference file
-# https://osascoexpress.com.br/llms.txt
-
-# Human/readability reference
-# https://osascoexpress.com.br/humans.txt
-# Security contact
-# https://osascoexpress.com.br/.well-known/security.txt
-Allow: /assets/img/og-osasco-express.png
-Allow: /assets/img/icon-192.png
-Allow: /assets/img/icon-512.png
-Allow: /site.webmanifest
-Allow: /blog/
